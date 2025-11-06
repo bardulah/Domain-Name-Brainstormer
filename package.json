@@ -1,27 +1,36 @@
 {
   "name": "domain-name-brainstormer",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A tool that suggests creative domain names across multiple TLDs and verifies their availability",
   "main": "index.js",
   "bin": {
-    "domain-brainstorm": "./cli.js"
+    "domain-brainstorm": "./cliV2.js"
   },
   "scripts": {
-    "start": "node cli.js",
-    "test": "node test.js"
+    "start": "node cliV2.js",
+    "test": "jest",
+    "demo": "node demo.js"
   },
   "keywords": [
     "domain",
     "dns",
     "whois",
+    "rdap",
     "domain-names",
-    "brainstorming"
+    "brainstorming",
+    "availability",
+    "branding"
   ],
   "author": "",
   "license": "MIT",
   "dependencies": {
     "whois": "^2.13.5",
     "chalk": "^4.1.2",
-    "ora": "^5.4.1"
+    "ora": "^5.4.1",
+    "inquirer": "^8.2.5",
+    "cli-table3": "^0.6.3"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
   }
 }

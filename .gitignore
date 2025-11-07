@@ -50,3 +50,14 @@ coverage
 # Output
 dist/
 build/
+
+# Cache
+.cache/
+*.cache
+
+# Exported results
+*.csv
+*.json
+*.md
+!package.json
+!package-lock.json
